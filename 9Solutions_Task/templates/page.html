@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monas assignement</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 900px;
+      }
+      header {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+      }
+
+      header .overlay {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 50px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient(
+          135deg,
+          #9f05ff69 10%,
+          #fd5e086b 100%
+        );
+      }
+
+      h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 80px;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 30px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        float: inherit;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #333;
+        background: #fff;
+        margin-bottom: 50px;
+        box-shadow: 0 3px 20px 0 #0000003b;
+      }
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          #da22ff 0%,
+          #9733ee 51%,
+          #da22ff 100%
+        );
+        margin: 10px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 50px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+
+    <header>
+      <div class="overlay">
+        <h1>Vulnerable feed</h1>
+        <br />
+        <h3>You can write something here:</h3>
+        <form action="/" method="POST">
+          <input
+            class="input"
+            type="text"
+            id="inputText"
+            name="inputText"
+            class="form-control"
+            placeholder="type some text here"
+          />
+          <br />
+          <button type="submit" , onclick="popup()">SUBMIT</button>
+        </form>
+      </div>
+    </header>
+  </head>
+
+  <script>
+    function popup() {
+      alert(
+        "Thank you for writing something. Your input text was sent to checkout. Have a nice day!"
+      );
+    }
+  </script>
+</html>
